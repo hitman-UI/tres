@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SumdeTres</title>
+
+    <script>
+        function calcularImc() {
+            alert("funcion calcularImc");
+            var p, a, b, Imc;
+            p = parseFloat(document.getElementById("txt_peso1").value)
+            a = parseFloat(document.getElementById("txt_altura1").value)
+            b = parseFloat(document.getElementById("txt_altura1").value)
+
+            Imc = p + a + b;
+            document.getElementById("txt_res").value = Imc;
+        }
+    </script>
+</head>
+
+<body>
+    <form name="frm_Imc">
+        <input type="text" name="txt_peso" placeholder="Primer numero" id="txt_peso1"><br>
+        <input type="text" name="txt_altua" placeholder="Segundo numero" id="txt_altura1"><br>
+        <input type="text" name="txt_altua" placeholder="Tercer numero" id="txt_altura1"><br>
+
+        <input type="text" name="txt_res" placeholder="Resultado" id="txt_res">
+        <input type="button" value="Sumar" onclick="calcularImc()">
+</body>
+
+</html>
